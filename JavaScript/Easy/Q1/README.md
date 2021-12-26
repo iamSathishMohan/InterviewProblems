@@ -8,6 +8,8 @@
         - [Example 2](#example-2)
         - [Example 3](#example-3)
         - [Example 4](#example-4)
+    - [Constraints](#constraints)
+    - [Follow-up](#follow-up)
 - [Solutions](#solutions)
     - [Solution 1: Brute Force](#solution-1-brute-force)
         - [Complexity Analysis](#complexity-analysis)
@@ -19,9 +21,10 @@
 
 ## Overview
 
-- Difficulty: :green_circle: ***Easy***
-- Solution: JavaScript
-- Source - ***[Click Here](https://leetcode.com/problems/two-sum/)***
+- **Difficulty:** :green_circle: ***Easy***
+- **Solution:** JavaScript
+- **Companies:** Facebook, Amazon, Microsoft, Oracle, LinkedIn, Airbnb
+- **Source:** ***[Click Here](https://leetcode.com/problems/two-sum/)***
 
 
 ## Problem Statement
@@ -56,25 +59,34 @@ Input: nums = [], target = 2
 Output: null
 ```
 
+### Constraints
+- 2 <= nums.length <= 104
+- -109 <= nums[i] <= 109
+- -109 <= target <= 109
+- Only one valid answer exists.
+
+### Follow-up
+Can you come up with an algorithm that is less than O(n2) time complexity?
+
 ## Solutions
 
 ### Solution 1: Brute Force
 
 ```javascript
 var twoSum1 = (nums, target) => {
-  if (!nums || nums.length < 2) {
-    return null;
-  }
-
-  for (var i = 0; i <= nums.length; i++) {
-    for (var j = i + 1; j <= nums.length; j++) {
-      if (nums[i] + nums[j] == target) {
-        return [i, j];
-      }
+    if (!nums || nums.length < 2) {
+        return null;
     }
-  }
 
-  return null;
+    for (var i = 0; i <= nums.length; i++) {
+        for (var j = i + 1; j <= nums.length; j++) {
+            if (nums[i] + nums[j] == target) {
+                return [i, j];
+            }
+        }
+    }
+
+    return null;
 };
 ```
 #### Complexity Analysis
@@ -84,20 +96,21 @@ var twoSum1 = (nums, target) => {
 ### Solution 2: Using maps
 
 ```javascript
-var twoSum1 = (nums, target) => {
-  if (!nums || nums.length < 2) {
-    return null;
-  }
-
-  for (var i = 0; i <= nums.length; i++) {
-    for (var j = i + 1; j <= nums.length; j++) {
-      if (nums[i] + nums[j] == target) {
-        return [i, j];
-      }
+var twoSum2 = (nums, target) => {
+    if (!nums || nums.length < 2) {
+        return null;
     }
-  }
 
-  return null;
+    const map = {};
+    for (var i = 0; i <= nums.length; i++) {
+        if (target - nums[i] in map) {
+            return [map[target - nums[i]], i];
+        }
+
+        map[nums[i]] = i;
+    }
+
+    return null;
 };
 ```
 #### Complexity Analysis

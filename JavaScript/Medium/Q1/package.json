@@ -1,7 +1,7 @@
 {
   "name": "q1",
   "version": "1.0.0",
-  "description": "Easy Q1 - Two Sum",
+  "description": "Medium Q1 - Add Two Numbers",
   "main": "index.js",
   "type": "module",
   "scripts": {
