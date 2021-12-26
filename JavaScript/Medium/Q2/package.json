@@ -1,0 +1,29 @@
+{
+  "name": "q2",
+  "version": "1.0.0",
+  "description": "Medium Q2 - Longest Substring Without Repeating Characters",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamSathishMohan/InterviewProblems.git"
+  },
+  "keywords": [
+    "Interview",
+    "Problems",
+    "JavaScript",
+    "NodeJS"
+  ],
+  "author": "Sathish Mohan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamSathishMohan/InterviewProblems/issues"
+  },
+  "homepage": "https://github.com/iamSathishMohan/InterviewProblems#readme",
+  "devDependencies": {
+    "mocha": "^9.1.3"
+  }
+}
