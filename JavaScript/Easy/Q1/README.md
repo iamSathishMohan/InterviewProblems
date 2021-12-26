@@ -9,9 +9,13 @@
         - [Example 3](#example-3)
         - [Example 4](#example-4)
 - [Solutions](#solutions)
-    - [Solution 1: Brute Force](#solution-1)
-    - [Solution 2: Using maps](#solution-2)
+    - [Solution 1: Brute Force](#solution-1-brute-force)
+        - [Complexity Analysis](#complexity-analysis)
+    - [Solution 2: Using maps](#solution-2-using-maps)
+        - [Complexity Analysis](#complexity-analysis-1)
 - [Veify the Solution](#verify-the-solution)
+    - [Pre Requisites](#pre-requisites)
+    - [Execution Steps](#execution-steps)
 
 ## Overview
 
