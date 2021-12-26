@@ -117,7 +117,7 @@ var twoSum2 = (nums, target) => {
 - ***Time Complexity:*** `O(n)`
 - ***Space Complexity:*** `O(n)`
 
-## Veify the Solution
+## Verify the Solution
 Follow the below given steps to verify the solution.
 
 ### Pre Requisites

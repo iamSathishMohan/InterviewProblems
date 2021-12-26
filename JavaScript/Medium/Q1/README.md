@@ -109,8 +109,8 @@ var addTwoNumbers1 = (l1, l2) => {
 };
 ```
 #### Complexity Analysis
-- ***Time Complexity:*** `O(m,n)`
-- ***Space Complexity:*** `O(m,n)`
+- ***Time Complexity:*** `O(max(m,n))`
+- ***Space Complexity:*** `O(max(m,n))`
 
 ### Solution 2: Concise Recursive
 
@@ -128,10 +128,10 @@ var addTwoNumbers2 = (l1, l2, carry = 0) => {
 };
 ```
 #### Complexity Analysis
-- ***Time Complexity:*** `O(m,n)`
-- ***Space Complexity:*** `O(m,n)`
+- ***Time Complexity:*** `O(max(m,n))`
+- ***Space Complexity:*** `O(max(m,n))`
 
-## Veify the Solution
+## Verify the Solution
 Follow the below given steps to verify the solution.
 
 ### Pre Requisites

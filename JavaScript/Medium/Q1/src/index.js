@@ -51,6 +51,15 @@ var addTwoNumbers1 = (l1, l2) => {
     return head.next;
 };
 
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+/**
+ * Time Complexity: O(max(m,n))
+ * Sapce Complexity: O(max(m,n))
+ */
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+// #############################################################################
+
 /**
  * @description The simple and readable solution is to use loops and generate sum node
  * @param {LinkedListNode} l1 first linked list node
@@ -69,5 +78,12 @@ var addTwoNumbers2 = (l1, l2, carry = 0) => {
         addTwoNumbers2(l1?.next || null, l2?.next || null, (sum / 10) >> 0)
     );
 };
+
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+/**
+ * Time Complexity: O(max(m,n))
+ * Sapce Complexity: O(max(m,n))
+ */
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 export { addTwoNumbers1, addTwoNumbers2 };
